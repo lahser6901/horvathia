@@ -63,6 +63,15 @@ select{padding:.5rem .6rem;border:1px solid var(--line);border-radius:8px;backgr
 .cclose{align-self:flex-end;background:transparent;border:0;color:var(--mut);font-size:1.3rem;cursor:pointer;padding:.1rem .4rem}
 .chint{color:var(--mut);font-size:.75rem;margin-top:.6rem}
 .n{color:var(--mut);font-size:.82rem;margin-left:auto}
+.storecta{display:block;max-width:1280px;margin:0 auto .9rem;padding:0 1.2rem;text-decoration:none}
+.storecta-in{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem 1.2rem;padding:1rem 1.3rem;border:2px solid var(--acc);border-radius:12px;background:linear-gradient(100deg,rgba(217,164,65,.18),rgba(217,164,65,.04));transition:transform .12s,box-shadow .12s}
+.storecta:hover .storecta-in{transform:translateY(-2px);box-shadow:0 0 22px rgba(217,164,65,.35)}
+.storecta .big{font-size:clamp(1.35rem,4.5vw,2.3rem);font-weight:800;letter-spacing:.02em;line-height:1.1;color:var(--ink);text-transform:uppercase}
+.storecta .big em{color:var(--acc);font-style:normal}
+.storecta .go{margin-left:auto;display:flex;align-items:center;gap:.45rem;padding:.6rem 1.1rem;border-radius:999px;background:var(--acc);color:#14161a;font-weight:800;font-size:1rem;white-space:nowrap}
+.ebaymark{font-family:Verdana,'Segoe UI',sans-serif;font-weight:700;font-style:italic;letter-spacing:-.07em;font-size:1.25em;line-height:1}
+.ebaymark .m1{color:#e53238}.ebaymark .m2{color:#0064d2}.ebaymark .m3{color:#f5af02}.ebaymark .m4{color:#86b817}
+@media(max-width:640px){.storecta .go{margin-left:0}}
 footer{max-width:1280px;margin:0 auto;padding:1rem 1.2rem 2.4rem;color:var(--mut);font-size:.8rem}
 footer a{color:var(--acc)}
 </style></head><body>
@@ -70,6 +79,10 @@ footer a{color:var(--acc)}
 <div><h1>Horvath<span>ia</span></h1>
 <p class="sub">702 cards live on eBay — click any card to view or buy.
 Updated 2026-07-22. More in the <a href="https://www.ebay.com/str/horvathiacards" target="_blank" rel="noopener">full store</a>.</p></div></header>
+<a class="storecta" href="https://www.ebay.com/str/horvathiacards" target="_blank" rel="noopener"><span class="storecta-in">
+<span class="big">Let's make a <em>deal.</em> Open to all offers.</span>
+<span class="go">Shop the full store on <span class="ebaymark"><span class="m1">e</span><span class="m2">b</span><span class="m3">a</span><span class="m4">y</span></span> &rarr;</span>
+</span></a>
 <div class="bar"><div class="bar-in">
 <input id="q" type="search" placeholder="Search player, set, parallel..." aria-label="Search">
 <button class="on" data-f="*">All (702)</button><button data-f="Baseball">Baseball (425)</button><button data-f="Basketball">Basketball (14)</button><button data-f="Football">Football (13)</button><button data-f="Ice Hockey">Ice Hockey (4)</button><button data-f="MMA">MMA (2)</button><button data-f="Non-Sport">Non-Sport (1)</button><button data-f="Soccer">Soccer (243)</button>
